@@ -14,7 +14,7 @@
 
 $(call inherit-product, device/yu/lettuce/full_lettuce.mk)
 
-# Inherit some common LineageOS stuff.
+# Inherit some common XenonHd stuff.
 $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
@@ -29,6 +29,9 @@ PRODUCT_GMS_CLIENTID_BASE := android-micromax
 TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
 TARGET_VENDOR_DEVICE_NAME := YUPHORIA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUPHORIA PRODUCT_NAME=YUPHORIA
+
+# Maintainer identifier
+PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="#ROHAN"
 
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
