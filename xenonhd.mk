@@ -20,7 +20,7 @@ $(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := xpe_lettuce
+PRODUCT_NAME := xenonhd_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 
