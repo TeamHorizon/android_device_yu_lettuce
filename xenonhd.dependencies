@@ -7,13 +7,6 @@
  },
  {
    "remote": "github",
-   "repository": "LineageOS/android_device_qcom_common",
-   "target_path": "device/qcom/common",
-   "branch": "cm-14.1"
- },
-
- {
-   "remote": "github",
    "repository": "LineageOS/android_kernel_cyanogen_msm8916",
    "target_path": "kernel/cyanogen/msm8916",
    "branch": "cm-14.1"
