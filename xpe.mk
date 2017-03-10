@@ -15,12 +15,12 @@
 $(call inherit-product, device/yu/lettuce/full_lettuce.mk)
 
 # Inherit some common XenonHd stuff.
-$(call inherit-product, vendor/xenonhd/config/common_full_phone.mk)
+$(call inherit-product, vendor/XPe/config/common_full_phone.mk)
 
 # Must define platform variant before including any common things
 TARGET_BOARD_PLATFORM_VARIANT := msm8916
 
-PRODUCT_NAME := xenonhd_lettuce
+PRODUCT_NAME := xpe_lettuce
 BOARD_VENDOR := yu
 PRODUCT_DEVICE := lettuce
 
@@ -31,7 +31,7 @@ TARGET_VENDOR_DEVICE_NAME := YUPHORIA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUPHORIA PRODUCT_NAME=YUPHORIA
 
 # Maintainer identifier
-PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="DROHAN"
+PRODUCT_PROPERTY_OVERRIDES += ro.xpe.maintainer="DROHAN"
 
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
