@@ -30,8 +30,10 @@ TARGET_VENDOR_PRODUCT_NAME := YUPHORIA
 TARGET_VENDOR_DEVICE_NAME := YUPHORIA
 PRODUCT_BUILD_PROP_OVERRIDES += TARGET_DEVICE=YUPHORIA PRODUCT_NAME=YUPHORIA
 
-# Maintainer identifier
-PRODUCT_PROPERTY_OVERRIDES += ro.xenonhd.maintainer="DROHAN"
+#XenonHD stuff
+WITH_SUPERSU := true
+PRODUCT_PROPERTY_OVERRIDES += \
+ro.xenonhd.maintainer=DROHAN
 
 ## Use the latest approved GMS identifiers unless running a signed build
 ifneq ($(SIGN_BUILD),true)
